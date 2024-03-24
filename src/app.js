@@ -5,7 +5,7 @@ document.querySelector("#root").innerHTML = `
 ${nav()}
 <main></main>`;
 
-renderCurrentPage("/");
+renderCurrentPage(window.location.pathname);
 attachNavEvents();
 
 window.onpopstate = () => {
