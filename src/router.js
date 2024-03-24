@@ -16,7 +16,7 @@ export function renderCurrentPage(pathname) {
     return;
   }
   if (routes[pathname] === undefined) {
-    document.querySelector("main").innerHTML = notFound();
+    document.querySelector("main").innerHTML = notFound(pathname);
     return;
   }
   document.querySelector("main").innerHTML = routes[pathname];
